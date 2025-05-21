@@ -31,5 +31,32 @@ int main
     return 0;
 }
 ```
+***
+# プロジェクトのフォルダ類
+### .gittignore
+Gitの管理下に置きたくないファイルを指定するファイル
+***
+# main.dartの書き換え
+``` c++
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      home: Text(
+        'Hello, Flutter World!!',
+        style: TextStyle(fontSize:32.0),
+      ),
+    );
+  }
+}
+```
 ***まるお「にゃーん.....橋本...」」***
 __(ストレスのあまりヒカキンの元カノの名前を言う)__
