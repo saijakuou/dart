@@ -58,5 +58,35 @@ class MyApp extends StatelessWidget {
   }
 }
 ```
+``` C++
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+  final title = "Flutterサンプル";
+  final message = "サンプル・メッセージ";
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      home: Scaffold(
+        appBar: AppBar(title: Text('Hello Flutter!')),
+        body: Text('Hello Flutter World!!', style: TextStyle(fontSize: 32.0)),
+      ),
+    );
+  }
+}
+
+```
+### Scaffold 　　　　　　　　　　　　
+
+アプリデザインの土台となるメソッド
+### appBar AppBar 　
+アプリの上限やバーを決めるもの　
+
 ***まるお「にゃーん.....橋本...」」***
 __(ストレスのあまりヒカキンの元カノの名前を言う)__
